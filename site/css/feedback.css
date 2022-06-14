@@ -1,0 +1,116 @@
+.feedback
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1920px;
+    background-color: #F1E9E6;
+    padding: 125px 50px;
+}
+
+.feedback__title
+{
+    font: 48px/58px "Montserrat", sans-serif;
+    color: #404040;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.feedback__reviews
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback__user
+{
+    display: flex;
+    justify-content: space-between;
+    max-width: 828px;
+    margin-bottom: 50px;
+}
+
+.user__text
+{
+    max-width: 677px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-left: 51px;
+    padding: 32px 54px 36px 42px;
+    position: relative;
+}
+
+.user__text::before
+{
+    position: absolute;
+    top: 44px;
+    left: -20px;
+    content: "";
+    border: 10px solid transparent;
+    border-top: 10px solid #FFFFFF;
+    border-right: 10px solid #FFFFFF;
+}
+
+.user__name
+{
+    font: 600 20px/26px "Montserrat", sans-serif;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.user__review
+{
+    font: 16px/26px "Montserrat", sans-serif;
+    color: #6E6E6E;
+    max-width: 581px;
+}
+
+.mirror
+{
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+@media screen and (max-width: 1024px)
+{
+    .feedback
+    {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .mirror
+    {
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .feedback__user
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user__photo
+    {
+        margin-bottom: 20px;
+    }
+
+    .user__text
+    {
+        margin-left: 0;
+    }
+
+    .user__text::before
+    {
+        position: absolute;
+        transform: rotate(-45deg);
+        top: -10px;
+        left: 48%;
+        content: "";
+        border: 10px solid transparent;
+        border-top: 10px solid #FFFFFF;
+        border-right: 10px solid #FFFFFF;
+    }
+}

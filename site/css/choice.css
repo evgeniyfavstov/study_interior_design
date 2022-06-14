@@ -1,0 +1,58 @@
+.choice
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.choice__title
+{
+    font: 48px/53px "Montserrat", sans-serif;
+    color: #000000;
+    padding-top: 154px;
+    margin-bottom: 32px;
+    width: 52%;
+    text-align: center;
+}
+
+.choice__description
+{
+    font: 16px/26px "Montserrat", sans-serif;
+    color: #6E6E6E;
+    text-align: center;
+    margin-bottom: 26px;
+    width: 36%;
+}
+
+.button__accent
+{
+    border: 1px solid #000000;
+    background-color: #000000;
+}
+
+.space
+{
+    margin-bottom: 315px;
+}
+
+@media screen and (max-width: 1024px)
+{
+    .choice__title
+    {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .choice__title
+    {
+        width: 80%;
+    }
+
+    .choice__description
+    {
+        width: 90%;
+    }
+}

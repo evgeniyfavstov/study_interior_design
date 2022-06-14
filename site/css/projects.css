@@ -1,0 +1,115 @@
+.projects
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E5E5E5;
+    padding: 128px 140px 121px 140px;
+    min-width: 600px;
+}
+
+.projects__controls
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1600px;
+}
+
+.projects__title
+{
+    font: 48px/58px "Montserrat", sans-serif;
+    color: #404040;
+    display: flex;
+}
+
+.arrows
+{
+    display: flex;
+    margin: 20px;
+    border: 0px solid #E5E5E5;
+    background-color: #E5E5E5;
+}
+
+.arrow
+{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.container
+{
+    margin: 50px auto;
+    width: 100%;
+    
+}
+
+.slider
+{
+    overflow: hidden;
+    max-width: 1600px;
+}
+
+.slider__slides
+{
+    display: flex;
+    transition: .2s;
+}
+
+.slider__slide
+{
+    height: auto;
+    max-width: 380px;
+}
+
+.example__title
+{
+    font: 26px/31px "Montserrat", sans-serif;
+    color: #000000;
+    margin-top: 29px;
+    margin-bottom: 16px;
+}
+
+.example__description
+{
+    font: 16px/32px "Montserrat", sans-serif;
+    color: #6E6E6E;
+    max-width: 374px;
+}
+
+@media screen and (max-width: 1870px)
+{
+    .projects__controls, .slider
+    {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1520px)
+{
+    .projects__controls, .slider
+    {
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 1080px)
+{
+    .projects__controls, .slider
+    {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 675px)
+{
+    .projects
+    {
+        padding: 20px;
+    }
+
+    .projects__controls, .slider
+    {
+        min-width: 300px;
+    }
+}
